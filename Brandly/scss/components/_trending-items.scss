@@ -1,0 +1,110 @@
+.trending__items {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background: url(../images/trending-items-bg.jpg);
+
+  &__container {
+    overflow: hidden;
+    padding: 0;
+  }
+
+  &__title {
+    margin-bottom: 63px;
+  }
+
+  &__card {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.card__info {
+  max-width: 570px;
+}
+
+.card__descr {
+  margin-bottom: 86px;
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 14px;
+  }
+
+
+  &__subtitle {
+    position: relative;
+    margin-bottom: 50px;
+    color: var(--color-boulder);
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1.8px;
+    text-align: left;
+
+    &::after {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      content: "";
+      width: 30px;
+      height: 1px;
+      background-color: var(--color-black);
+    }
+  }
+
+  &__text {
+    color: var(--color-boulder);
+    text-align: left;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1.8px;
+
+    &--paragraph-1 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.card__nav__btns {
+  max-width: 385px;
+  text-align: left;
+  font-size: 0;
+}
+
+.shop__btn {
+  min-width: 152px;
+
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+
+}
+
+.nav__btn {
+  width: 51px;
+  height: 49px;
+  border: 1px solid var(--mine-shaft);
+  color: var(--mine-shaft);
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--mine-shaft);
+  }
+}
+
+.size__btns {
+  margin-bottom: 30px;
+}
+
+.size__btn:not(:last-child) {
+  margin-right: 30px;
+}

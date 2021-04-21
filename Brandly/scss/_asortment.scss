@@ -1,0 +1,158 @@
+.sell-block {
+	background-image: url(../img/bg-TI.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 50px;
+		.sell-container{
+			width:1200px;
+			margin-left: auto;
+			margin-right: auto;
+				h2{
+					text-align: center;
+					@include tittle;
+				}
+			h2::before, h2::after {
+				content: '';
+				position: absolute;
+				width: 113px;
+				height: 3px;
+				background-color: #dc0000;
+				right: 45%;
+				top: 35px;
+			}
+			h2::after {
+				content: '';
+				top: 115px;
+			}
+		}
+}
+.store {
+	display: inline-flex;
+	justify-content: center;
+	.description {
+		text-align: left;
+		padding-left: 35px;
+	}
+		h3{
+			color: #dc0000;
+			font-family: $lato-font;
+			font-size: 30px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+		}
+		.underline {
+			position: relative;
+			color: #777777;
+			font-family: "Open Sans";
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			margin-bottom: 60px;
+		}
+		.underline::after {
+			content: '';
+			position: absolute;
+			width: 30px;
+			height: 1px;
+			background-color: #000000;
+			top: 50px;
+			left: 0;
+		}
+		p, h4 {
+			color: #777777;
+			font-family: $lato-font;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			margin-top: 0px;
+		}
+		h4 {
+			margin-bottom: 0;
+		}
+}	
+.buy {
+	padding-left: 0;
+	display: flex;
+	justify-content: start;
+	text-align: center;
+		button {
+			cursor: pointer;
+			width: 170px;
+			height: 50px;
+			color: #333333;
+			font-family: "Open Sans";
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+			border: 1px solid black;
+			background-color: transparent;
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 170px;
+			height: 50px;
+			color: #333333;
+			font-family: "Open Sans";
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+			border: 1px solid black;
+			background-color: transparent;
+			text-decoration: none;
+			margin-left: 30px;
+		}
+}
+.form-conteiner {
+	width: 400px;
+}
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	margin-bottom: 30px;
+	margin-top: 90px;
+	input:checked + label {
+		background-color: #333333;
+		color: white;
+	}
+	label {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		width: 70px;
+		height: 51px;
+		background-color: transparent;
+		border: 1px solid  #333333;
+		margin-right: 30px;
+		margin-bottom: 20px;
+	}
+	input {
+		display: none;
+	}
+}
+.slide-sell-cards {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+			-ms-flex-pack: center;
+					justify-content: center;
+					margin-top: 30px;
+}
+	.slide-sell-cards button:active {
+		border: 1px solid red;
+		background-color: white; 
+	}
+	.slide-sell-cards button {
+		padding: 5px;
+		cursor: pointer;
+		background-color: gray;
+		border-radius: 100%;
+		margin-left: 10px; 
+		border: none;
+}
+	

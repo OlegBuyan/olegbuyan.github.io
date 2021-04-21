@@ -1,0 +1,53 @@
+.newsletter {
+  background: linear-gradient(rgba(34, 37, 51, 0.7), rgba(34, 37, 51, 0.7)), url(../images/newslatter-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+  font-family: "OpenSansLight";
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 70px 0;
+}
+
+.input {
+  &__container {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: url(../images/email-icon.png);
+      position: absolute;
+      top: 12px;
+      left: 28px;
+      width: 15px;
+      height: 11px;
+    }
+
+  }
+
+  &__email {
+    width: 770px;
+    color: var(--color-white);
+    font-family: "OpenSansLight";
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: none;
+    padding: 15px 80px;
+    border: 1px solid var(--color-white);
+  }
+}
+
+.subscribe__btn {
+  width: 270px;
+  color: var(--color-black);
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--color-white);
+  padding: 15px 0;
+}

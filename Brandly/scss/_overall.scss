@@ -1,0 +1,42 @@
+.site-container {
+	overflow: hidden;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.regular__title {
+	padding-top: 37px;
+	padding-bottom: 37px;
+	position: relative;
+	text-align: center;
+	color: var(--mine-shaft);
+	font-family: "OpenSansLightItalic";
+	font-size: 40px;
+	font-weight: 300;
+
+	&::before {
+		@include regular-title-before;
+	}
+
+	&::after {
+		@include regular-title-after;
+	}
+}
+
+.card-title {
+	margin-top: 24px;
+	text-align: left;
+	color: var(--color-red);
+	font-family: Lato;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}

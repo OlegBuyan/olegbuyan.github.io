@@ -1,0 +1,16 @@
+.pag-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+  .swiper-pagination-bullet {
+    background-color: var(--mine-shaft);
+    opacity: 0.54;
+
+    &-active {
+      background-color: transparent;
+      border: 2px solid var(--color-red);
+    }
+  }
+}

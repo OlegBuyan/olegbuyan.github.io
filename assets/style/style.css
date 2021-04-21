@@ -1,0 +1,179 @@
+:root{
+  --border: #fff;
+  --textColor: #fff;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--textColor);
+}
+
+body{
+  /* display: flex; */
+  /* background: -webkit-linear-gradient(top, #86aecc 0%, #d4e4ef 100%); */
+  background: #000;
+}
+
+h1{
+  /* text-align: center; */
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: fit-content;
+  position: relative;
+}
+
+h1::after{
+  content: '';
+  display: block;
+  height: 40px;
+  width: 5px;
+  position: absolute;
+  z-index: -1;
+  left: 41.5%;
+  top: 40px;
+  background-color: var(--border);
+}
+
+h3{
+  margin-top: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--textColor);
+  font-weight: bold;
+}
+
+header{
+ width: 100%;
+
+border-right: 2px solid var(--border);
+}
+
+p{
+  margin-top: 5px;
+}
+
+ul{
+  border-bottom: 1px solid var(--border);
+}
+
+li{
+  margin-left: 40px;
+}
+
+aside{
+  border-right: 2px solid var(--border);
+}
+
+.description__title-job{
+  border-bottom: 1px solid var(--border);
+}
+
+.description__text{
+  border-bottom: 1px solid var(--border);
+}
+
+.last-contact{
+  border-bottom: 1px solid var(--border);
+}
+
+.content__wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+@media (max-width:767px) {
+  .content__wrapper{
+    flex-wrap: wrap;
+  }
+}
+.portfolio__img{
+  width: 300px;
+  height: 240px;
+  margin-top: 20px;
+}
+
+.portfolio__img img{
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+}
+
+.description__title-name{
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.caption{
+  position: absolute;
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(138, 158, 161);
+  color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity ease 0.2s;
+}
+
+.project-href{
+  position: relative;
+  width: 50%;
+  justify-self: center;
+}
+
+.project-href > span{
+  position: absolute;
+  left: 0;
+  background-color: greenyellow;
+  padding: 20px;
+}
+
+.project-href:hover > .caption{
+opacity: 0.9;
+border: 2px solid var(--border);
+}
+
+.project-href img{
+  width: 100%;
+}
+
+.works{
+  width: 100%;
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(auto,1fr);
+  grid-gap: 10px;
+  padding-top: 20px;
+  border-top: 2px solid var(--border);
+}
+
+.works::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--border);
+  left: 50%;
+}
+
+.project-href{
+ display: flex;
+ justify-content: center;
+
+}

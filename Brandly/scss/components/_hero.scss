@@ -1,0 +1,50 @@
+.hero {
+	font-family: OpenSansLight;
+	color: var(--color-white);
+	text-transform: uppercase;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 1236px;
+		height: 100vh;
+		font-size: 30px;
+		font-weight: 300;
+		text-align: center;
+	}
+}
+
+.info {
+	&__subtitle {
+		font-family: "OpenSansLight";
+		font-size: 30px;
+		font-weight: 300;
+		text-transform: uppercase;
+
+		&:first-child {
+			letter-spacing: 9px;
+		}
+	}
+
+
+	&__title {
+		font-family: "Lato";
+		margin-top: 32px;
+		margin-bottom: 32px;
+		font-size: 60px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
+	&__button {
+		padding: 17px 48px;
+		margin-top: 28px;
+		font-family: "Lato";
+		font-size: 18px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: var(--color-white);
+		border: 2px solid var(--color-white);
+	}
+}

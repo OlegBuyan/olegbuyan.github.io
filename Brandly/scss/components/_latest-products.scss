@@ -1,0 +1,94 @@
+.latest__products {
+  padding-top: 56px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+
+  &__box {
+    display: flex;
+    width: 370px;
+    height: 418px;
+
+    &:nth-last-child(-n+2) {
+      flex-grow: 1;
+    }
+
+    &--men {
+      background: linear-gradient(rgba(34, 37, 51, 0.7), rgba(34, 37, 51, 0.7)), url(../images/products-card-img--men.jpg);
+    }
+
+    &--woman {
+      background: linear-gradient(rgba(34, 37, 51, 0.7), rgba(34, 37, 51, 0.7)), url(../images/products-card-img--women.jpg);
+    }
+
+    &--watches {
+      background: linear-gradient(rgba(34, 37, 51, 0.7), rgba(34, 37, 51, 0.7)), url(../images/products-card-img--watches.jpg);
+    }
+
+    &--discount {
+      background: linear-gradient(rgba(34, 37, 51, 0.7), rgba(34, 37, 51, 0.7)), url(../images/products-card-img--discount.jpg);
+    }
+
+    &--sale {
+      background: linear-gradient(rgba(34, 37, 51, 0.7), rgba(34, 37, 51, 0.7)), url(../images/products-card-img--sale.jpg);
+    }
+
+  }
+
+  &__name {
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-family: "OpenSansLightItalic";
+    font-size: 40px;
+    font-weight: 300;
+    width: 315px;
+    height: 355px;
+    border: 3px solid var(--color-white);
+
+
+    &--sale {
+      font-family: "Lato";
+      width: 430px;
+      font-size: 45px;
+      font-weight: 900;
+      border: none;
+
+      &::before {
+        @include latest-product-before;
+      }
+
+      &::after {
+        @include latest-product-after;
+      }
+    }
+
+    &--discount {
+      font-family: "Lato";
+      font-size: 45px;
+      font-weight: 900;
+      border: none;
+
+      &::before {
+        @include latest-product-before;
+      }
+
+      &::after {
+        @include latest-product-after;
+      }
+    }
+  }
+}

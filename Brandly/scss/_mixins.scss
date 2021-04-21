@@ -1,0 +1,42 @@
+@mixin regular-title-before {
+  position: absolute;
+  left: 50%;
+  bottom: 88px;
+  transform: translateX(-50%);
+  display: inline-block;
+  content: "";
+  width: 113px;
+  height: 3px;
+  background-color: var(--color-red);
+}
+
+@mixin regular-title-after {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  transform: translateX(-50%);
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 113px;
+  height: 3px;
+  background-color: var(--color-red);
+}
+
+@mixin latest-product-before {
+  position: absolute;
+  top: 83px;
+  content: "";
+  width: 192px;
+  height: 1px;
+  background-color: var(--color-white);
+}
+
+@mixin latest-product-after {
+  position: absolute;
+  bottom: 85px;
+  content: "";
+  width: 192px;
+  height: 1px;
+  background-color: var(--color-white);
+}

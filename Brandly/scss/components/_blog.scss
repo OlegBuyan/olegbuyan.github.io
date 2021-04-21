@@ -1,0 +1,63 @@
+.blog {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 67px;
+  }
+
+  &__item {
+    max-width: 570px;
+    text-align: left;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+
+    &__title {
+      margin-bottom: 18px;
+    }
+
+    &__author {
+      opacity: 0.8;
+      color: var(--mine-shaft);
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--color-porcelain);
+      margin-bottom: 24px;
+    }
+
+    &__descr {
+      opacity: 0.6;
+      color: var(--mine-shaft);
+      font-family: "OpenSansLight";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--color-porcelain);
+      margin-bottom: 30px;
+    }
+  }
+
+  .read-more-btn {
+    color: var(--mine-shaft);
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid var(--mine-shaft);
+    padding: 16px 38px;
+
+    &:active,
+    &:focus {
+      scale: (0.98);
+    }
+  }
+}

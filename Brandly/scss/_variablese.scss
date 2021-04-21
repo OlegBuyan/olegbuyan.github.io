@@ -1,0 +1,22 @@
+
+$color-main: red;
+$lato-font:'Lato', sans-serif;
+$open-sans:  "Open Sans";
+@mixin titles-font {
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	}
+@mixin tittle {
+	position: relative;
+	color: #333333;
+	font-family: "Open Sans";
+	font-size: 40px;
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: 90px;
+	padding-top: 55px;
+}

@@ -1,0 +1,62 @@
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-slide {
+
+  &--1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero-slide-1.jpg);
+
+  }
+
+  &--2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero-slide-2.jpg);
+
+  }
+
+  &--3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero-slide-3.jpg);
+
+  }
+
+  &--4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero-slide-4.jpg);
+
+  }
+}
+
+.bg-image-settings {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 53px;
+
+  &-bullet {
+    cursor: pointer;
+    box-sizing: content-box;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: var(--color-white);
+
+    &-active {
+      background-color: transparent;
+      border: 2px solid var(--color-white);
+    }
+  }
+}
